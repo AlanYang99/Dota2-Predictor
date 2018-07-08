@@ -1,0 +1,139 @@
+<html>
+    <style>
+.Radiant {    
+}
+
+.text_radiant {
+    font-family: 'Trebuchet MS';
+    font-size: 50;
+    font-weight: bold;
+    padding-top: 40px;
+    color: rgb(107, 252, 107);
+    margin-left: 100px;
+} 
+
+.text_dire {
+    font-family: 'Trebuchet MS';
+    font-size: 50;
+    font-weight: bold;
+    padding-top: 40px;
+    color: rgb(255, 115, 115);
+} 
+
+.text_result {
+    font-family: 'Trebuchet MS';
+    font-size: 30;
+    font-weight: bold;
+    padding-top: 200px;
+    color: blanchedalmond;
+    margin-left: 300px;
+    position: absolute;
+} 
+
+.Player {
+    display: block;
+    height: 25px;
+    text-align:left;
+    line-height:40px;
+    padding-left:130px;
+    color:lightgrey;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.list {
+    width: 250px; 
+    background-color:lightgrey;
+    color: black;
+}
+
+.button {
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color:lightgrey;
+    background-color:rgb(252, 74, 74);
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0 5px rgb(77, 77, 77);
+    padding: 25px;
+    margin-top: 500px;
+    margin-left: 20px;
+    position: center;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: rgb(75, 75, 75);
+    transform: translateY(4px);
+}
+
+.button2 {
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    color:lightgrey;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0 5px rgb(48, 48, 48);
+    padding: 25px;
+    margin-top: 350px;
+    margin-left: 625px;
+}
+
+.button2:hover {background-color: #373837}
+
+.button2:active {
+    background-color: #373837;
+    box-shadow: 0 5px rgb(48, 48, 48);
+    transform: translateY(4px);
+}
+
+.1 {
+    left:400px;
+}
+
+.result_text{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    padding-top: 100px;
+    text-align: center;
+    color: blanchedalmond;
+}
+.buttonnew {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 25px;
+  
+}
+    </style>
+    <script>
+function goBack() {
+    window.history.back();
+}
+
+
+    </script>
+    <head>
+        <title>Result</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body style = "background:url(https://images.wallpaperscraft.com/image/dota_2_galaxy_style_logo_94038_1280x720.jpg);background-repeat:no-repeat;background-size:100% 100%;">
+        <div class="col-sm-12" style="background-color:transparent;">
+            <h1 class = "result_text">Result</h1>
+            <div>
+                <h4 class = "result_text">We believe that Radiant has a {{ number }}% win rate!</h4>
+            </div>
+        </div>   
+            <button class ="button2" onclick = "goBack()">Go Back</button>
+                 
+    </body>
+</html>

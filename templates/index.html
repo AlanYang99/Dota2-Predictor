@@ -1,0 +1,298 @@
+<html>
+    <style>
+.Radiant {    
+}
+
+.text_radiant {
+    font-family: 'Trebuchet MS';
+    font-size: 50;
+    font-weight: bold;
+    padding-top: 40px;
+    color: rgb(107, 252, 107);
+    margin-left: 100px;
+} 
+
+.text_dire {
+    font-family: 'Trebuchet MS';
+    font-size: 50;
+    font-weight: bold;
+    padding-top: 40px;
+    color: rgb(255, 115, 115);
+} 
+
+.text_result {
+    font-family: 'Trebuchet MS';
+    font-size: 30;
+    font-weight: bold;
+    padding-top: 200px;
+    color: blanchedalmond;
+    margin-left: 300px;
+    position: absolute;
+} 
+
+.Player {
+    display: block;
+    height: 25px;
+    text-align:left;
+    line-height:40px;
+    padding-left:130px;
+    color:lightgrey;
+    font-weight: bold;
+    padding-top: 60px;
+}
+
+.list {
+    width: 225px; 
+    background-color:lightgrey;
+    color: black;
+}
+
+.button {
+    font-size: 30px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color:lightgrey;
+    background-color:rgb(252, 74, 74);
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0 5px rgb(77, 77, 77);
+    padding: 25px;
+    margin-top: 500px;
+    margin-left: 20px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: rgb(75, 75, 75);
+    transform: translateY(4px);
+}
+
+.button2 {
+    font-size: 30px;
+    cursor: pointer;
+    outline: none;
+    color:lightgrey;
+    background-color: rgb(83, 83, 83);
+    border: none;
+    border-radius: 10%;
+    box-shadow: 0 5px rgb(48, 48, 48);
+    padding: 25px;
+    margin-top: 350px;
+    margin-left: 700px;
+}
+
+.button2:hover {background-color: #373837}
+
+.button2:active {
+    background-color: #373837;
+    box-shadow: 0 5px rgb(48, 48, 48);
+    transform: translateY(4px);
+}
+
+.1 {
+    left:400px;
+}
+
+.result_text{
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+    color: blanchedalmond;
+}
+.buttonnew {
+    font-size: 30px;
+    cursor: pointer;
+    padding: 25px;
+  
+}
+
+
+
+    </style>
+    <head>
+        <title>Dota2 Predictor</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+
+    <header>&nbsp</header>
+
+    <body style = "background:url(https://images.wallpaperscraft.com/image/dota_2_galaxy_style_logo_94038_1280x720.jpg);background-repeat:no-repeat;background-size:100% 100%">
+        <div class="row">  
+            <div class="col-sm-5" style="background-color:transparent;">
+                <center class = "text_radiant">Radiant</center>
+                <br>
+                <form method = "POST">
+                    <div id = "Player 1" class = "Player"> Player 1
+                        <input list = "Heroes" name = "Player1" class = "list"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 2" class = "Player"> Player 2
+                        <input list = "Heroes" name = "Player2" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 3" class = "Player"> Player 3
+                        <input list = "Heroes" name = "Player3" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 4" class = "Player">Player 4
+                        <input list = "Heroes" name = "Player4" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 5" class = "Player">Player 5
+                        <input list = "Heroes" name = "Player5" class = "list" style = "width: 225px;"></input>
+                    </div>
+                </div>
+                
+                <div class="col-sm-2" style="background-color:transparent;">
+                    <button class="button" onclick="window.location.href='result.html';">Calculate</button>
+                </div>
+
+                <div class="col-sm-5" style="background-color:transparent;">
+                    <center class = "text_dire">Dire</center>
+                    <br>
+                    <div id = "Player 6" class = "Player">Player 1 
+                        <input list = "Heroes" name = "Player6" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 7" class = "Player">Player 2
+                        <input list = "Heroes" name = "Player7" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 8" class = "Player">Player 3
+                        <input list = "Heroes" name = "Player8" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 9" class = "Player">Player 4
+                        <input list = "Heroes" name = "Player9" class = "list" style = "width: 225px;"></input>
+                    </div>
+                    <br>
+                    <div id = "Player 10" class = "Player">Player 5
+                        <input list = "Heroes" name = "Player10" class = "list" style = "width: 225px;"></input>
+                    </div>
+                </div>
+            </div>
+
+            <datalist id = "Heroes">
+                <option value = "Abaddon">
+                <option value = "Alchemist">
+                <option value = "Ancient Apparition">
+                <option value = "Anti-Mage">
+                <option value = "Axe">
+                <option value = "Bane">
+                <option value = "Batrider">
+                <option value = "Beastmaster">
+                <option value = "Bloodseeker">
+                <option value = "Bounty Hunter">
+                <option value = "Brewmaster">
+                <option value = "Bristleback">
+                <option value = "Broodmother">
+                <option value = "Centaur Warrunner">
+                <option value = "Chaos Knight">
+                <option value = "Chen">
+                <option value = "Clinkz">
+                <option value = "Clockwerk">
+                <option value = "Crystal Maiden">
+                <option value = "Dark Seer">
+                <option value = "Dazzle">
+                <option value = "Death Prophet">
+                <option value = "Disruptor">
+                <option value = "Doom">
+                <option value = "Dragon Knight">
+                <option value = "Drow Ranger">
+                <option value = "Earth Spirit">
+                <option value = "Earthshaker">
+                <option value = "Elder Titan">
+                <option value = "Ember Spirit">
+                <option value = "Enchantress">
+                <option value = "Enigma">
+                <option value = "Faceless Void">
+                <option value = "Gyrocopter">
+                <option value = "Huskar">
+                <option value = "Invoker">
+                <option value = "Io">
+                <option value = "Jakiro">
+                <option value = "Juggernaut">
+                <option value = "Keeper of the Light">
+                <option value = "Kunkka">
+                <option value = "Legion Commander">
+                <option value = "Leshrac">
+                <option value = "Lich">
+                <option value = "Lifestealer">
+                <option value = "Lina">
+                <option value = "Lion">
+                <option value = "Lone Druid">
+                <option value = "Luna">
+                <option value = "Lycan">
+                <option value = "Magnus">
+                <option value = "Medusa">
+                <option value = "Meepo">
+                <option value = "Mirana">
+                <option value = "Morphling">
+                <option value = "Naga Siren">
+                <option value = "Natures Prophet">
+                <option value = "Necrophos">
+                <option value = "Night Stalker">
+                <option value = "Nyx Assassin">
+                <option value = "Ogre Magi">
+                <option value = "Omniknight">
+                <option value = "Oracle">
+                <option value = "Outward Devourer">
+                <option value = "Phantom Assassin">
+                <option value = "Phantom Lancer">
+                <option value = "Phoenix">
+                <option value = "Puck">
+                <option value = "Pudge">
+                <option value = "Pugna">
+                <option value = "Queen of Pain">
+                <option value = "Razor">
+                <option value = "Riki">
+                <option value = "Rubick">
+                <option value = "Sand King">
+                <option value = "Shadow Demon">
+                <option value = "Shadow Fiend">
+                <option value = "Shadow Shaman">
+                <option value = "Silencer">
+                <option value = "Skywrath Mage">
+                <option value = "Slardar">
+                <option value = "Slark">
+                <option value = "Sniper">
+                <option value = "Spectre">
+                <option value = "Spirit Breaker">
+                <option value = "Storm Spirit">
+                <option value = "Sven">
+                <option value = "Techies">
+                <option value = "Templar Assassin">
+                <option value = "Terrorblade">
+                <option value = "Tidehunter">
+                <option value = "Timbersaw">
+                <option value = "Tinker">
+                <option value = "Tiny">
+                <option value = "Treant Protector">
+                <option value = "Troll Warlord">
+                <option value = "Tusk">
+                <option value = "Underlord">
+                <option value = "Undying">
+                <option value = "Ursa">
+                <option value = "Vengeful Spirit">
+                <option value = "Venomancer">
+                <option value = "Viper">
+                <option value = "Visage">
+                <option value = "Warlock">
+                <option value = "Weaver">
+                <option value = "Windranger">
+                <option value = "Winter Wyvern">
+                <option value = "Witch Doctor">
+                <option value = "Wraith King">
+                <option value = "Zeus">
+            </datalist>
+        </form>
+    </body>
+</html>
