@@ -131,10 +131,7 @@
                 <center class = "text_radiant">Radiant</center>
                 <br>
                 <form method = "POST">
-                    
-                <div class="col-sm-2" style="background-color:transparent;">
-                    <button class="button">Calculate</button>
-                </div>
+                   
                     <div id = "Player 1" class = "Player"> Player 1
                         <input list = "Heroes" name = "Player1" class = "list"></input>
                     </div>
@@ -155,8 +152,12 @@
                         <input list = "Heroes" name = "Player5" class = "list" style = "width: 225px;"></input>
                     </div>
                 </div>
-
-
+                <!-- If the button is within the form, it would work according to the python file
+                Test it when the button is outside the form tag, (The button does nothing)
+                -->
+                <div class="col-sm-2" style="background-color:transparent;">
+                    <button class="button">Calculate</button>
+                </div>
 
                 <div class="col-sm-5" style="background-color:transparent;">
                     <center class = "text_dire">Dire</center>
